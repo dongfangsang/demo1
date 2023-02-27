@@ -16,7 +16,7 @@ public class SampleTest {
 
     @Test
     public void testSelect() {
-        System.out.println(("----- selectAll method test1 ------"));
+        System.out.println(("----- selectAll method test2 ------"));
         List<User> userList = userMapper.selectList(null);
         Assertions.assertEquals(5, userList.size());
         userList.forEach(System.out::println);
