@@ -12,11 +12,11 @@ import java.util.List;
 @SpringBootTest
 public class SampleTest {
     @Autowired
-    private UserMapper userMapper;  //假报错
+    private UserMapper  userMapper;  //假报错
 
     @Test
     public void testSelect() {
-        System.out.println(("----- selectAll method test ------"));
+        System.out.println(("----- selectAll method test1 ------"));
         List<User> userList = userMapper.selectList(null);
         Assertions.assertEquals(5, userList.size());
         userList.forEach(System.out::println);
